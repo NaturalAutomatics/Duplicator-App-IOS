@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC8E59EE29354514007BA387 /* duplicatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8E59ED29354514007BA387 /* duplicatorApp.swift */; };
+		BC8E59F029354514007BA387 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8E59EF29354514007BA387 /* ContentView.swift */; };
+		BC8E59F229354516007BA387 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC8E59F129354516007BA387 /* Assets.xcassets */; };
+		BC8E59F529354516007BA387 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC8E59F429354516007BA387 /* Preview Assets.xcassets */; };
+		BC8E59FF29354517007BA387 /* duplicatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8E59FE29354517007BA387 /* duplicatorTests.swift */; };
+		BC8E5A0929354517007BA387 /* duplicatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8E5A0829354517007BA387 /* duplicatorUITests.swift */; };
+		BC8E5A0B29354517007BA387 /* duplicatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8E5A0A29354517007BA387 /* duplicatorUITestsLaunchTests.swift */; };
+		BC8E5A19293550B2007BA387 /* CoreNFC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC8E5A18293550B2007BA387 /* CoreNFC.framework */; };
+		BC8E5A1C29355164007BA387 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8E5A1B29355164007BA387 /* ModelData.swift */; };
+		BC8E5A5A29364022007BA387 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8E5A5929364022007BA387 /* Status.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC8E59FB29354517007BA387 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC8E59E229354514007BA387 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC8E59E929354514007BA387;
+			remoteInfo = duplicator;
+		};
+		BC8E5A0529354517007BA387 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC8E59E229354514007BA387 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC8E59E929354514007BA387;
+			remoteInfo = duplicator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BC8E59EA29354514007BA387 /* duplicator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = duplicator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC8E59ED29354514007BA387 /* duplicatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = duplicatorApp.swift; sourceTree = "<group>"; };
+		BC8E59EF29354514007BA387 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BC8E59F129354516007BA387 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC8E59F429354516007BA387 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BC8E59FA29354517007BA387 /* duplicatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = duplicatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC8E59FE29354517007BA387 /* duplicatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = duplicatorTests.swift; sourceTree = "<group>"; };
+		BC8E5A0429354517007BA387 /* duplicatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = duplicatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC8E5A0829354517007BA387 /* duplicatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = duplicatorUITests.swift; sourceTree = "<group>"; };
+		BC8E5A0A29354517007BA387 /* duplicatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = duplicatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BC8E5A18293550B2007BA387 /* CoreNFC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreNFC.framework; path = System/Library/Frameworks/CoreNFC.framework; sourceTree = SDKROOT; };
+		BC8E5A1A293550DB007BA387 /* duplicator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = duplicator.entitlements; sourceTree = "<group>"; };
+		BC8E5A1B29355164007BA387 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		BC8E5A5929364022007BA387 /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC8E59E729354514007BA387 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC8E5A19293550B2007BA387 /* CoreNFC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC8E59F729354517007BA387 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC8E5A0129354517007BA387 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BC8E59E129354514007BA387 = {
+			isa = PBXGroup;
+			children = (
+				BC8E59EC29354514007BA387 /* duplicator */,
+				BC8E59FD29354517007BA387 /* duplicatorTests */,
+				BC8E5A0729354517007BA387 /* duplicatorUITests */,
+				BC8E59EB29354514007BA387 /* Products */,
+				BC8E5A17293550B2007BA387 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BC8E59EB29354514007BA387 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC8E59EA29354514007BA387 /* duplicator.app */,
+				BC8E59FA29354517007BA387 /* duplicatorTests.xctest */,
+				BC8E5A0429354517007BA387 /* duplicatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC8E59EC29354514007BA387 /* duplicator */ = {
+			isa = PBXGroup;
+			children = (
+				BC8E5A1A293550DB007BA387 /* duplicator.entitlements */,
+				BC8E59ED29354514007BA387 /* duplicatorApp.swift */,
+				BC8E59EF29354514007BA387 /* ContentView.swift */,
+				BC8E59F129354516007BA387 /* Assets.xcassets */,
+				BC8E59F329354516007BA387 /* Preview Content */,
+				BC8E5A1B29355164007BA387 /* ModelData.swift */,
+				BC8E5A5929364022007BA387 /* Status.swift */,
+			);
+			path = duplicator;
+			sourceTree = "<group>";
+		};
+		BC8E59F329354516007BA387 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BC8E59F429354516007BA387 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BC8E59FD29354517007BA387 /* duplicatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				BC8E59FE29354517007BA387 /* duplicatorTests.swift */,
+			);
+			path = duplicatorTests;
+			sourceTree = "<group>";
+		};
+		BC8E5A0729354517007BA387 /* duplicatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BC8E5A0829354517007BA387 /* duplicatorUITests.swift */,
+				BC8E5A0A29354517007BA387 /* duplicatorUITestsLaunchTests.swift */,
+			);
+			path = duplicatorUITests;
+			sourceTree = "<group>";
+		};
+		BC8E5A17293550B2007BA387 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC8E5A18293550B2007BA387 /* CoreNFC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC8E59E929354514007BA387 /* duplicator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC8E5A0E29354517007BA387 /* Build configuration list for PBXNativeTarget "duplicator" */;
+			buildPhases = (
+				BC8E59E629354514007BA387 /* Sources */,
+				BC8E59E729354514007BA387 /* Frameworks */,
+				BC8E59E829354514007BA387 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = duplicator;
+			productName = duplicator;
+			productReference = BC8E59EA29354514007BA387 /* duplicator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BC8E59F929354517007BA387 /* duplicatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC8E5A1129354517007BA387 /* Build configuration list for PBXNativeTarget "duplicatorTests" */;
+			buildPhases = (
+				BC8E59F629354517007BA387 /* Sources */,
+				BC8E59F729354517007BA387 /* Frameworks */,
+				BC8E59F829354517007BA387 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC8E59FC29354517007BA387 /* PBXTargetDependency */,
+			);
+			name = duplicatorTests;
+			productName = duplicatorTests;
+			productReference = BC8E59FA29354517007BA387 /* duplicatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BC8E5A0329354517007BA387 /* duplicatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC8E5A1429354517007BA387 /* Build configuration list for PBXNativeTarget "duplicatorUITests" */;
+			buildPhases = (
+				BC8E5A0029354517007BA387 /* Sources */,
+				BC8E5A0129354517007BA387 /* Frameworks */,
+				BC8E5A0229354517007BA387 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC8E5A0629354517007BA387 /* PBXTargetDependency */,
+			);
+			name = duplicatorUITests;
+			productName = duplicatorUITests;
+			productReference = BC8E5A0429354517007BA387 /* duplicatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC8E59E229354514007BA387 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					BC8E59E929354514007BA387 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					BC8E59F929354517007BA387 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = BC8E59E929354514007BA387;
+					};
+					BC8E5A0329354517007BA387 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = BC8E59E929354514007BA387;
+					};
+				};
+			};
+			buildConfigurationList = BC8E59E529354514007BA387 /* Build configuration list for PBXProject "duplicator" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC8E59E129354514007BA387;
+			productRefGroup = BC8E59EB29354514007BA387 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC8E59E929354514007BA387 /* duplicator */,
+				BC8E59F929354517007BA387 /* duplicatorTests */,
+				BC8E5A0329354517007BA387 /* duplicatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC8E59E829354514007BA387 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC8E59F529354516007BA387 /* Preview Assets.xcassets in Resources */,
+				BC8E59F229354516007BA387 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC8E59F829354517007BA387 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC8E5A0229354517007BA387 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC8E59E629354514007BA387 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC8E59F029354514007BA387 /* ContentView.swift in Sources */,
+				BC8E59EE29354514007BA387 /* duplicatorApp.swift in Sources */,
+				BC8E5A1C29355164007BA387 /* ModelData.swift in Sources */,
+				BC8E5A5A29364022007BA387 /* Status.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC8E59F629354517007BA387 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC8E59FF29354517007BA387 /* duplicatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC8E5A0029354517007BA387 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC8E5A0929354517007BA387 /* duplicatorUITests.swift in Sources */,
+				BC8E5A0B29354517007BA387 /* duplicatorUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC8E59FC29354517007BA387 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC8E59E929354514007BA387 /* duplicator */;
+			targetProxy = BC8E59FB29354517007BA387 /* PBXContainerItemProxy */;
+		};
+		BC8E5A0629354517007BA387 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC8E59E929354514007BA387 /* duplicator */;
+			targetProxy = BC8E5A0529354517007BA387 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BC8E5A0C29354517007BA387 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BC8E5A0D29354517007BA387 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC8E5A0F29354517007BA387 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = duplicator/duplicator.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"duplicator/Preview Content\"";
+				DEVELOPMENT_TEAM = 6953MAU8K8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NFCReaderUsageDescription = "The app using NFC to scan ids";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.popoffdev.duplicator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BC8E5A1029354517007BA387 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = duplicator/duplicator.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"duplicator/Preview Content\"";
+				DEVELOPMENT_TEAM = 6953MAU8K8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NFCReaderUsageDescription = "The app using NFC to scan ids";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.popoffdev.duplicator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BC8E5A1229354517007BA387 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6953MAU8K8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.popoffdev.duplicatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/duplicator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/duplicator";
+			};
+			name = Debug;
+		};
+		BC8E5A1329354517007BA387 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6953MAU8K8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.popoffdev.duplicatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/duplicator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/duplicator";
+			};
+			name = Release;
+		};
+		BC8E5A1529354517007BA387 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6953MAU8K8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.popoffdev.duplicatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = duplicator;
+			};
+			name = Debug;
+		};
+		BC8E5A1629354517007BA387 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6953MAU8K8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.popoffdev.duplicatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = duplicator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC8E59E529354514007BA387 /* Build configuration list for PBXProject "duplicator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC8E5A0C29354517007BA387 /* Debug */,
+				BC8E5A0D29354517007BA387 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC8E5A0E29354517007BA387 /* Build configuration list for PBXNativeTarget "duplicator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC8E5A0F29354517007BA387 /* Debug */,
+				BC8E5A1029354517007BA387 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC8E5A1129354517007BA387 /* Build configuration list for PBXNativeTarget "duplicatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC8E5A1229354517007BA387 /* Debug */,
+				BC8E5A1329354517007BA387 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC8E5A1429354517007BA387 /* Build configuration list for PBXNativeTarget "duplicatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC8E5A1529354517007BA387 /* Debug */,
+				BC8E5A1629354517007BA387 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC8E59E229354514007BA387 /* Project object */;
+}
