@@ -39,7 +39,7 @@
 /* Begin PBXFileReference section */
 		BC8E59EA29354514007BA387 /* duplicator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = duplicator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC8E59ED29354514007BA387 /* duplicatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = duplicatorApp.swift; sourceTree = "<group>"; };
-		BC8E59EF29354514007BA387 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BC8E59EF29354514007BA387 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; usesTabs = 0; };
 		BC8E59F129354516007BA387 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC8E59F429354516007BA387 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BC8E59FA29354517007BA387 /* duplicatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = duplicatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };

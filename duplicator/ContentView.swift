@@ -243,10 +243,18 @@ struct LoginView : View {
     
     var body: some View {
         VStack(spacing: 30) {
-            Text("Wellcome to Duplicator application.")
+            Text("Wellcome to Duplicator application!")
+                .font(.title)
             Text("At first you need authorize you with your login and password.")
+                .font(.headline)
+                .foregroundColor(Color.green)
+                .padding()
+                .accessibilityLabel("Authorisation description")
             TextField("Login:", text: $_login)
+                .padding(.horizontal)
+                .accessibilityLabel("Login Field")
             TextField("Password:", text: $_password)
+                .padding(.horizontal)
             
             Button("Login", action: {
                 _loginData._isLogged = true
