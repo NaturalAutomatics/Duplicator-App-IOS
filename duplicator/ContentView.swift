@@ -305,10 +305,6 @@ struct DuplicateView : View {
             _loginData.startDuplicate()
         }
     }
-    
-    
-
-    
 }
 
 
@@ -316,5 +312,13 @@ struct DuplicateView : View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+        LoginView().environmentObject(LoggingData())
+        DuplicateView().environmentObject({ () -> LoggingData in
+            let envObj = LoggingData()
+            envObj._isLogged = true
+            return envObj
+        }() )
     }
 }
+
+
