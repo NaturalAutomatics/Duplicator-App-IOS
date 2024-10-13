@@ -275,10 +275,11 @@ struct DuplicateView : View {
     var body: some View {
         VStack() {
             HStack {
-                Button("<< Back", action: {
-                    _loginData._isLogged = false
-                })
-                Spacer()
+//                Button("<< Back", action: {
+//                    _loginData._isLogged = false
+//                })
+//                .padding(.leading, 15.0)
+//                Spacer()
             }
             Spacer()
             if let image = _loginData._image {
@@ -294,6 +295,8 @@ struct DuplicateView : View {
             Button((_loginData._model != nil) ? "Duplicate" : "Scan NFC", action: {
                 duplicate()
             })
+            .frame(width: 125.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100.0)
+            
             Spacer()
         }
     }
